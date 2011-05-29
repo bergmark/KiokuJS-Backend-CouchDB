@@ -17,7 +17,7 @@ StartTest(function(t) {
         connect : function () {
             
             var handle = new KiokuJS.Backend.CouchDB({
-                dbURL   : 'http://local/5984/kiokujs-backend-couchdb-' + new Date().getTime()
+                dbURL   : 'http://local:5984/kiokujs-backend-couchdb-' + new Date().getTime()
             })
             
             handle.__createDB().andThen(function () {
